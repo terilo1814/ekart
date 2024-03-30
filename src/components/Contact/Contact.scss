@@ -1,0 +1,50 @@
+.contact {
+    background-color: #bab8ae;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+
+    .wrapper {
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+            width: 80%; 
+        }
+
+        input {
+            padding: 7px;
+            border-radius: 5px 0 0 5px;
+            border: none;
+        }
+
+        button {
+            border-radius: 0 5px 5px 0;
+            padding: 7px;
+            border: none;
+            background-color: teal;
+            color: white;
+        }
+
+        .icons {
+            display: flex;
+            gap: 10px;
+
+            @media screen and (max-width: 768px) {
+                margin-top: 10px; 
+            }
+
+            .MuiSvgIcon-root:hover {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                cursor: pointer;
+                background: #000;
+                color: white;
+            }
+        }
+    }
+}

@@ -1,0 +1,95 @@
+.footer {
+    margin: 100px 20px 20px 20px; 
+
+    .top {
+        display: flex;
+        flex-wrap: wrap; 
+        gap: 70px; 
+
+        .item {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            text-align: justify;
+            font-size: 14px;
+
+            h1 {
+                font-size: 18px;
+                font-weight: 500;
+                color: #555;
+            }
+            span {
+                color: gray;
+            }
+
+            .itemLinks {
+                cursor: pointer;
+
+                &:hover {
+                    text-decoration: underline; 
+                }
+            }
+
+            .contactContainer {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+                .contactIcon {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 10px;
+
+                    svg {
+                        margin-right: 8px;
+                        width: 20px;
+                        height: 20px; 
+                    }
+                }
+            }
+        }
+    }
+
+    .bottom {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        margin-top: 40px;
+
+        .left {
+            display: flex;
+            flex-direction: column; 
+            align-items: center; 
+
+            .logo {
+                background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                color: transparent;
+                font-size: 40px;
+                font-weight: 800;
+                font-family: cursive;
+            }
+
+            .copyright {
+                margin-top: 10px; 
+                font-size: 12px;
+                color: gray;
+            }
+        }
+
+        .right {
+            margin-top: 20px; 
+            img {
+                margin-left: 60px;
+                height: 30px; 
+            }
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        margin: 100px 200px 20px 200px; 
+    }
+}

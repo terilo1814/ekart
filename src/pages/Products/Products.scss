@@ -1,0 +1,56 @@
+.products {
+    padding: 30px 50px;
+    display: flex;
+
+    .left {
+        flex: 1;
+        position: sticky;
+        height: 100%;
+        top: 50px;
+
+        .filterItem {
+            margin-bottom: 30px;
+            border-bottom: 1px solid gray;
+            max-width: 60%;
+
+            &:last-child {
+                border-bottom: 0;
+            }
+
+
+            h3 {
+                display: flex;
+                align-items: center;
+                font-weight: 350;
+                margin-bottom: 20px;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                cursor: pointer;
+                
+
+            }
+
+            .inputItem {
+                margin-bottom: 10px;
+                font-weight: 310;
+
+                label {
+                    margin-left: 10px;
+                }
+            }
+            &:last-of-type h3 { 
+                cursor: auto; 
+            }
+        }
+    }
+
+    .right {
+        flex: 3;
+
+        .catImg {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            margin-bottom: 50px;
+        }
+    }
+}
